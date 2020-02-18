@@ -1,3 +1,7 @@
 configuar crdenciales de usuario 
 4.1) user name
 $ git config 
+ balblaballa
+balalablabla
+balablababl
+bakblaal hfjdsvgf
