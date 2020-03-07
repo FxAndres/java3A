@@ -1,1 +1,164 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package JUEGO;
 
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+/**
+ *
+ * @author ANDRES STEVEN LOPEZ EGAS
+ * PERDON PROFESOR PERO NO ME ALCANSO EL TIEMPO PARA TERMINARLO..
+ */
+public class JUEGO {
+    
+    JFrame ventana;
+    JLabel fondopresentacion;
+    JLabel botonjugar;
+    JPanel panelpresentacion;
+    
+    public JUEGO(){
+        //ventana
+        ventana = new JFrame("CARRERA NUMERICA 2020");
+        ventana.setSize(700 , 511);
+        ventana.setLayout(null);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setLocationRelativeTo(null);
+        ventana.setResizable(false);
+        
+        
+        
+        
+        //panel
+        panelpresentacion = new JPanel();
+        panelpresentacion.setSize(ventana.getWidth() , ventana.getHeight());
+        panelpresentacion.setLocation(0, 0);
+        panelpresentacion.setLayout(null);
+        panelpresentacion.setVisible(true);
+        
+        
+        //fondo de presentacion
+       fondopresentacion = new JLabel();
+       fondopresentacion.setSize(ventana.getWidth(), ventana.getHeight());
+       fondopresentacion.setLocation(0, 0);
+       fondopresentacion.setIcon(new ImageIcon("imagenes/portada1.png"));
+       fondopresentacion.setVisible(true);
+       panelpresentacion.add(fondopresentacion,0);
+       
+       
+
+
+        //BOTON JUGAR
+       botonjugar = new JLabel();
+       botonjugar.setSize(177, 75);
+       botonjugar.setLocation(425, 92);
+       botonjugar.setIcon(new ImageIcon("imagenes/jugar2.png"));
+       botonjugar.setVisible(true);
+       panelpresentacion.add(botonjugar,0);
+       
+       
+       
+       botonjugar.addMouseListener(new MouseAdapter() {
+       
+           @Override
+           public void mousePressed(MouseEvent e){
+               //System.out.println("presione el boton");
+           
+               
+           
+           }});
+       
+       //BOTON JUGADOR 1
+       botonjugar = new JLabel();
+       botonjugar.setSize(187, 43);
+       botonjugar.setLocation(50, 80);
+       botonjugar.setIcon(new ImageIcon("imagenes/JUGADOR1.png"));
+       botonjugar.setVisible(true);
+       panelpresentacion.add(botonjugar,0);
+       
+       
+       botonjugar.addMouseListener(new MouseAdapter() {
+       
+           @Override
+           public void mousePressed(MouseEvent e){
+               //System.out.println("presione el boton");
+           
+               
+           
+           }});
+       
+       
+       //BOTON JUGADOR 2
+       botonjugar = new JLabel();
+       botonjugar.setSize(187, 43);
+       botonjugar.setLocation(50, 160);
+       botonjugar.setIcon(new ImageIcon("imagenes/JUGADOR2.png"));
+       botonjugar.setVisible(true);
+       panelpresentacion.add(botonjugar,0);
+       
+       
+       botonjugar.addMouseListener(new MouseAdapter() {
+       
+           @Override
+           public void mousePressed(MouseEvent e){
+               //System.out.println("presione el boton");
+           
+               
+           
+           }});
+       
+       //BOTON JUGADOR 3
+       botonjugar = new JLabel();
+       botonjugar.setSize(187, 43);
+       botonjugar.setLocation(50, 240);
+       botonjugar.setIcon(new ImageIcon("imagenes/JUGADOR3.png"));
+       botonjugar.setVisible(true);
+       panelpresentacion.add(botonjugar,0);
+       
+       
+       botonjugar.addMouseListener(new MouseAdapter() {
+       
+           @Override
+           public void mousePressed(MouseEvent e){
+               //System.out.println("presione el boton");
+           
+               
+           
+           }});
+       
+       //BOTON JUGADOR 4
+       botonjugar = new JLabel();
+       botonjugar.setSize(187, 43);
+       botonjugar.setLocation(50, 320);
+       botonjugar.setIcon(new ImageIcon("imagenes/JUGADOR4.png"));
+       botonjugar.setVisible(true);
+       panelpresentacion.add(botonjugar,0);
+       
+       botonjugar.addMouseListener(new MouseAdapter() {
+       
+           @Override
+           public void mousePressed(MouseEvent e){
+               //System.out.println("presione el boton");
+           
+               }});
+        
+             ventana.add(panelpresentacion);
+             ventana.setVisible(true);
+        
+        
+        
+        
+    
+    
+    }
+    
+                            
+}
