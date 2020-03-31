@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>
+            myMusic
+        </title>
+    </head>
+    <body>
+        <center>
+        <input type="text" placeholder="Buscar">
+    </body>
+</html>
