@@ -6,6 +6,7 @@
 package mymarket;
 
 import Config.Database;
+import java.awt.Color;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -28,6 +29,7 @@ public class RegisterUserForm extends javax.swing.JFrame {
      */
     public RegisterUserForm() {
         initComponents();
+        this.getContentPane().setBackground(Color.blue);
     }
 
     /**
@@ -58,14 +60,17 @@ public class RegisterUserForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Register new user");
+        setBackground(new java.awt.Color(204, 204, 0));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Email:");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Password:");
 
-        btnRegistrar.setBackground(new java.awt.Color(0, 255, 0));
+        btnRegistrar.setBackground(new java.awt.Color(255, 0, 51));
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setText("Register");
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +79,7 @@ public class RegisterUserForm extends javax.swing.JFrame {
             }
         });
 
-        btnCancelar.setBackground(new java.awt.Color(255, 51, 51));
+        btnCancelar.setBackground(new java.awt.Color(255, 153, 51));
         btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelar.setText("Cancel");
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -84,22 +89,29 @@ public class RegisterUserForm extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Firstname:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Lastname:");
 
+        cmbGenero.setForeground(new java.awt.Color(255, 255, 255));
         cmbGenero.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Female", "Male", "Other" }));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Gender:");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Mobile:");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("City:");
 
+        cmbciudad.setForeground(new java.awt.Color(255, 255, 255));
         cmbciudad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pasto", "Ipiales", "Tumaco", "Sandoná", "Túquerres" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
